@@ -1112,7 +1112,7 @@ function MeetingRoom({ user, roomId, isCopilotMode, onLeave }) {
                 <span style={{ fontWeight: 800, color: 'var(--primary-mint)' }}>How to sync real meeting data:</span>
               </div>
               <p style={{ margin: 0, fontSize: '0.68rem', color: 'var(--text-muted)', lineHeight: '1.4' }}>
-                To track actual Google Meet or Zoom calls, load the unpacked extension in <strong style={{ color: 'var(--text-dark)' }}>chrome://extensions</strong> from: <code style={{ background: '#E6ECE5', padding: '2px 4px', borderRadius: '4px' }}>c:\Users\shwet\OneDrive\Desktop\Online_Meet\chrome-extension</code>.
+                To track actual Google Meet or Zoom calls, load the unpacked extension in <strong style={{ color: 'var(--text-dark)' }}>chrome://extensions</strong> from: <code style={{ background: '#E6ECE5', padding: '2px 4px', borderRadius: '4px' }}>c:\Users\Akshita\OneDrive\Desktop\AI MEETING INTELLIGENCE SYSTEM\chrome-extension</code>.
                 Then, join your Meet/Zoom call and <strong style={{ color: 'var(--text-dark)' }}>turn on Captions (CC)</strong>. It will automatically detect actual participants, mic/cam states, and conversations!
               </p>
             </div>

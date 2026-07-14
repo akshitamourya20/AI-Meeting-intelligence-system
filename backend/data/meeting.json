@@ -10836,5 +10836,85 @@
     "agenda": "General Meeting",
     "summary": "The meeting was active with participation from System, happy, Happy Keshrwani, Himanshi. A total of 20 conversation segments were recorded and analyzed.",
     "score": 8.5
+  },
+  {
+    "_id": "6pguqpjmrkq6l6n",
+    "createdAt": "2026-07-14T14:07:14.111Z",
+    "updatedAt": "2026-07-14T14:07:14.111Z",
+    "roomId": "bkkq-loqu",
+    "host": "Akshita Mourya",
+    "participants": [],
+    "transcript": [],
+    "actionItems": []
+  },
+  {
+    "_id": "zkiy1ekmrkq6lnr",
+    "createdAt": "2026-07-14T14:07:14.727Z",
+    "updatedAt": "2026-07-14T14:07:49.569Z",
+    "roomId": "bkkq-loqu",
+    "host": "Akshita Mourya",
+    "participants": [],
+    "transcript": [
+      {
+        "sender": "System",
+        "message": "Akshita Mourya (Host) joined the meeting.",
+        "timestamp": "07:37 PM",
+        "isSpeech": false,
+        "isSystem": true
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "tcqpo85mrkq7cix",
+        "title": "Follow up on overall project status and feedback",
+        "assignee": "Host"
+      }
+    ],
+    "isCompleted": true,
+    "agenda": "General Meeting",
+    "summary": "The meeting was active with participation from System. A total of 1 conversation segments were recorded and analyzed.",
+    "score": 7.5
+  },
+  {
+    "_id": "a94m1kmmrkq8pns",
+    "createdAt": "2026-07-14T14:08:53.224Z",
+    "updatedAt": "2026-07-14T14:12:31.603Z",
+    "roomId": "vmr-atsc-ssp",
+    "host": "Akshita Mourya",
+    "participants": [
+      {
+        "name": "Akshita Mourya",
+        "email": "demo@aimeeting.com",
+        "device": "Desktop/Laptop",
+        "micSwitches": 235,
+        "camSwitches": 24,
+        "micOnCount": 3,
+        "micOffCount": 2,
+        "micOnDuration": 176,
+        "micOffDuration": 1,
+        "camOnDuration": 79,
+        "camOffDuration": 98
+      }
+    ],
+    "transcript": [
+      {
+        "sender": "System",
+        "message": "Akshita Mourya (Host) joined the meeting.",
+        "timestamp": "07:38 PM",
+        "isSpeech": false,
+        "isSystem": true
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "sso4lgvmrkqde4q",
+        "title": "Follow up on overall project status and feedback",
+        "assignee": "Akshita Mourya"
+      }
+    ],
+    "isCompleted": true,
+    "agenda": "General Meeting",
+    "summary": "The meeting was active with participation from System. A total of 1 conversation segments were recorded and analyzed.",
+    "score": 7.5
   }
 ]

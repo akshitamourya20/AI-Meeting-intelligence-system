@@ -632,15 +632,29 @@ io.on('connection', (socket) => {
             const hostUser = localUsers.find(u => u.name.toLowerCase() === name.toLowerCase());
             if (hostUser) {
                 // Sync host's mic and cam switches based on extension detections
-                if (hostUser.micEnabled !== p.micEnabled) {
+                if (hostUser.isFirstSync === undefined) {
+                    hostUser.isFirstSync = false;
                     hostUser.micEnabled = p.micEnabled;
-                    hostUser.micSwitches += 1;
-                    if (p.micEnabled) hostUser.micOnCount = (hostUser.micOnCount || 0) + 1;
-                    else hostUser.micOffCount = (hostUser.micOffCount || 0) + 1;
-                }
-                if (hostUser.camEnabled !== p.camEnabled) {
                     hostUser.camEnabled = p.camEnabled;
-                    hostUser.camSwitches += 1;
+                    // Initialize counters based on actual state, without adding switches
+                    if (p.micEnabled) {
+                        hostUser.micOnCount = 1;
+                        hostUser.micOffCount = 0;
+                    } else {
+                        hostUser.micOnCount = 0;
+                        hostUser.micOffCount = 1;
+                    }
+                } else {
+                    if (hostUser.micEnabled !== p.micEnabled) {
+                        hostUser.micEnabled = p.micEnabled;
+                        hostUser.micSwitches += 1;
+                        if (p.micEnabled) hostUser.micOnCount = (hostUser.micOnCount || 0) + 1;
+                        else hostUser.micOffCount = (hostUser.micOffCount || 0) + 1;
+                    }
+                    if (hostUser.camEnabled !== p.camEnabled) {
+                        hostUser.camEnabled = p.camEnabled;
+                        hostUser.camSwitches += 1;
+                    }
                 }
                 if (p.device) {
                     if (p.device === 'Mobile/Phone' || hostUser.device !== 'Mobile/Phone') {
